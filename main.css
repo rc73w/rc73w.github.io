@@ -1,0 +1,64 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("TheAmazingHostlogo.jpg");
+  min-height: 100%;
+}
+
+/* Second image (Events) */
+.bgimg-2 {
+  background-image: url("logo2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("buntings-hanging-over-food-served-on-decorated-picnic-table-at-back-yard-713778129-3eb769e44232442e8e19dadb6ae335bb.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1300px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+#about {
+  max-width: 1200px;
+}
